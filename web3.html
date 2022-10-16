@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +7,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -19,6 +19,7 @@
     </style>
 
     <nav class="navbar bg-dark navbar-dark p-3 navbar-expand-lg">
+    
         <div class="container">
             <a href="" class="navbar-brand">410261660羅奕晟</a>
 
@@ -26,7 +27,6 @@
                 data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav item">
@@ -39,9 +39,17 @@
             </div>
         </div>
     </nav>
+    
     <div class="p-5 text-center border-bottom">
-        <h1>lab3</h1>
+        <h1>lab3 lab4</h1>
+        <script>
+            $(document).ready(function() {
+              $("#target1").css("color", "red");
+              $("#target1").prop("disabled", true);
+            });
+          </script>
         <div class="col-lg-6 mx-auto my-col">
+            <button class="btn btn-default target" id="target1">不能按</button>
             <p class="lead m-4">
                 這是使用HTML、CSS的測試網頁，功能是移動網頁寬度時，圖片和按鈕也會移動，所有超連結裡都沒有東西
             </p>
@@ -79,7 +87,7 @@
     <footer class="p-4 border-top">
         <div class="container align-item-center justify-content-between">
             <p class="mb-0 text-muted">
-                &copy; web_lab3 輔仁資工二 羅奕晟
+                &copy; web_lab3 資工二 羅奕晟
             </p>
         </div>
     </footer>
